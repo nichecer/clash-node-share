@@ -3,71 +3,41 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚_01 - nichec.com
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40006
-  type: ss
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-- name: 🇮🇹 意大利_03 - nichec.com
-  server: 202.50.253.90
-  port: 19999
-  type: ss
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国_01 - nichec.com
-  server: 45.129.242.56
-  port: 443
+- name: 🇺🇸 美国_04 - nichec.com
+  server: us22.sofast.live
+  port: 58011
   type: vless
   udp: true
-  uuid: ebdfaf99-41d8-4e48-8196-d54510ffb556
-  tls: true
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  tls: false
   skip-cert-verify: true
   network: tcp
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: YURKlEQ3rap4KOXXGsVFZyYev2oDU2gCEbNTXPdKWRY
-    short-id: abcdef
-  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利_07 - nichec.com
-  server: 202.50.253.45
-  port: 19999
-  type: ss
+- name: 🇺🇸 美国_01 - nichec.com
+  server: jp.sofast.live
+  port: 52683
+  type: vless
   udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利_05 - nichec.com
-  server: 202.50.253.18
-  port: 19999
-  type: ss
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: 🇭🇰 香港_01 - nichec.com
+  server: 47.244.120.197
+  port: 36703
+  type: vmess
   udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利_04 - nichec.com
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利_06 - nichec.com
-  server: 202.50.253.72
-  port: 19999
-  type: ss
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利_09 - nichec.com
-  server: 202.50.253.27
-  port: 19999
-  type: ss
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国_02 - nichec.com
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇩🇪 德国_01 - nichec.com
   server: 185.44.64.166
   port: 59397
   type: vless
@@ -82,49 +52,35 @@ proxies:
     short-id: '1430'
   servername: la.blogs.nvidia.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利_02 - nichec.com
-  server: 202.50.253.36
-  port: 19999
-  type: ss
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利_01 - nichec.com
-  server: 202.50.253.63
-  port: 19999
-  type: ss
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利_08 - nichec.com
-  server: 202.50.253.54
-  port: 19999
-  type: ss
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇷🇺 俄罗斯_01 - nichec.com
-  server: 46.17.46.27
-  port: 18443
-  type: ss
-  udp: true
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇪🇪 爱沙尼亚_01 - nichec.com
-  server: 5.129.202.80
-  port: 443
+- name: 🇮🇷 伊朗_01 - nichec.com
+  server: 198.16.113.219
+  port: 8443
   type: vless
   udp: true
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: e3e0e1c3-599e-4ae1-8ad4-d9e90effacc4
   tls: true
   skip-cert-verify: true
   network: tcp
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
-    short-id: 2ef2b10d5143d798
-  servername: mirror-50.topp-con.xyz
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇮🇹 意大利_03 - nichec.com
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利_02 - nichec.com
+  server: 202.50.253.27
+  port: 19999
+  type: ss
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇺🇸 美国_02 - nichec.com
   server: 79.182.39.57
   port: 443
@@ -139,7 +95,78 @@ proxies:
     short-id: 257420d9d430152a
   servername: a0688bt.us4.h1clayd.click
   client-fingerprint: firefox
-- name: 🇺🇸 美国_01 - nichec.com
+- name: 🇮🇹 意大利_05 - nichec.com
+  server: 202.50.253.18
+  port: 19999
+  type: ss
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利_07 - nichec.com
+  server: 202.50.253.54
+  port: 19999
+  type: ss
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利_08 - nichec.com
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利_06 - nichec.com
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国_02 - nichec.com
+  server: 13.143.165.126
+  port: 443
+  type: vless
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EHlZh1OuiO6gQLTSV2-BVeV0Niv23vvIxQaPvcWCJUw
+    short-id: db382e1979d80ecb
+  servername: update-26.topp-con.xyz
+  client-fingerprint: ios
+- name: 🇮🇹 意大利_04 - nichec.com
+  server: 202.50.253.63
+  port: 19999
+  type: ss
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利_01 - nichec.com
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利_09 - nichec.com
+  server: 202.50.253.99
+  port: 19999
+  type: ss
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利_10 - nichec.com
+  server: 202.50.253.81
+  port: 19999
+  type: ss
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国_03 - nichec.com
   server: 201.51.4.89
   port: 443
   type: vless
@@ -154,7 +181,14 @@ proxies:
     short-id: b9120cd53ffd7bba
   servername: cache-89.topp-con.xyz
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰_01 - nichec.com
+- name: 🇯🇵 日本_01 - nichec.com
+  server: 154.36.158.197
+  port: 8388
+  type: ss
+  udp: true
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+- name: 🇷🇺 俄罗斯_01 - nichec.com
   server: 186.246.9.29
   port: 443
   type: vless
@@ -172,23 +206,26 @@ proxy-groups:
 - name: 节点选择
   type: select
   proxies:
-  - 🇲🇾 马来西亚_01 - nichec.com
-  - 🇮🇹 意大利_03 - nichec.com
-  - 🇩🇪 德国_01 - nichec.com
-  - 🇮🇹 意大利_07 - nichec.com
-  - 🇮🇹 意大利_05 - nichec.com
-  - 🇮🇹 意大利_04 - nichec.com
-  - 🇮🇹 意大利_06 - nichec.com
-  - 🇮🇹 意大利_09 - nichec.com
-  - 🇩🇪 德国_02 - nichec.com
-  - 🇮🇹 意大利_02 - nichec.com
-  - 🇮🇹 意大利_01 - nichec.com
-  - 🇮🇹 意大利_08 - nichec.com
-  - 🇷🇺 俄罗斯_01 - nichec.com
-  - 🇪🇪 爱沙尼亚_01 - nichec.com
-  - 🇺🇸 美国_02 - nichec.com
+  - 🇺🇸 美国_04 - nichec.com
   - 🇺🇸 美国_01 - nichec.com
-  - 🇳🇱 荷兰_01 - nichec.com
+  - 🇭🇰 香港_01 - nichec.com
+  - 🇩🇪 德国_01 - nichec.com
+  - 🇮🇷 伊朗_01 - nichec.com
+  - 🇮🇹 意大利_03 - nichec.com
+  - 🇮🇹 意大利_02 - nichec.com
+  - 🇺🇸 美国_02 - nichec.com
+  - 🇮🇹 意大利_05 - nichec.com
+  - 🇮🇹 意大利_07 - nichec.com
+  - 🇮🇹 意大利_08 - nichec.com
+  - 🇮🇹 意大利_06 - nichec.com
+  - 🇩🇪 德国_02 - nichec.com
+  - 🇮🇹 意大利_04 - nichec.com
+  - 🇮🇹 意大利_01 - nichec.com
+  - 🇮🇹 意大利_09 - nichec.com
+  - 🇮🇹 意大利_10 - nichec.com
+  - 🇺🇸 美国_03 - nichec.com
+  - 🇯🇵 日本_01 - nichec.com
+  - 🇷🇺 俄罗斯_01 - nichec.com
   - DIRECT
 rules:
 - MATCH,节点选择
